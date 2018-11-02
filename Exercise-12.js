@@ -3,7 +3,7 @@ function tentukanDeretGeometri(arr) {
     var selisih=[]
 
     //buat array selisih-kelipatan antar komponen
-    for(i=0;i<arr.length-1;i++){
+    for(var i=0;i<arr.length-1;i++){
         selisih[i]= arr[i+1]/arr[i]
 
         //buat array selisih-kelipatan antar komponen

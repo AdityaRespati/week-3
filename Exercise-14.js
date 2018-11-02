@@ -7,13 +7,13 @@ function mengelompokkanAngka(arr) {
 
     for (i=0; i<arr.length ; i++){
         if (arr[i]%3===0){
-            tiga.push(arr[i])
+            tiga[tiga.length]=(arr[i])
         }
         else if(arr[i]%2===0){
-            genap.push(arr[i])
+            genap[genap.length]=(arr[i])
         }
         else{
-            ganjil.push(arr[i])
+            ganjil[ganjil.length]=(arr[i])
         }
     }
 

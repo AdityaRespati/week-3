@@ -3,12 +3,12 @@ function perkalianUnik(arr) {
     var arr2=[]
     var multiply=1
 
-    //car hasil perkalian semua komponen 
+    //cari hasil perkalian semua komponen 
     for (var i=0; i<arr.length; i++){
         multiply= multiply* arr[i]
     }
 
-    //car hasil perkalian selain komponen yang index
+    //cari hasil perkalian selain komponen yang index
     for (var j=0; j<arr.length; j++){
         arr2[j]=multiply/arr[j]
     }

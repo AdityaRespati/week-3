@@ -1,15 +1,15 @@
 //Palindrome
 
 function palindrome(kata) {
-    var reverse='' 
-    for(i=kata.length-1;i>=0;i--){
-        reverse += kata.charAt(i)
+    var reverse='' ;
+    for(var i=kata.length-1;i>=0;i--){
+        reverse += kata.charAt(i);
     }
     if (reverse===kata){
-        return 'palindrome'
+        return true
     }
     else{
-        return 'not palindrome'
+        return false
     }
   }
   

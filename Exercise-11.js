@@ -3,13 +3,16 @@ function tentukanDeretAritmatika(arr) {
     var selisih=[]
 
     //buat array selisih antar komponen
-    for(i=0;i<arr.length-1;i++){
+    var i=0
+    while(i<arr.length-1){
         selisih[i]= arr[i+1]-arr[i]
         
         //periksa apakah semua selisih sama
         if(i>0 && selisih[i]!== selisih[i-1]){
             return false
         }
+
+        i++
     }
     return true
   }

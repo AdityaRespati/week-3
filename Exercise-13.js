@@ -21,19 +21,20 @@ function targetTerdekat(arr) {
     }
     
 //sortir untuk cari jarak terkecil 
-    count2.sort(function(a,b){b-a})
-    var output=count2[count2.length-1]
+    count2.sort()
+    var output=count2[0]
 
     if(output==undefined){
         return 0
     }
     else{
+        console.log(character, count, count2)
          return output
     }
   }
   
   // TEST CASES
-  console.log(targetTerdekat([' ', ' ', 'o', ' ', ' ', 'x', ' ', 'x'])); // 3
+  console.log(targetTerdekat(['x', ' ', 'o', ' ', ' ', 'x', ' ', 'x'])); // 3
   console.log(targetTerdekat(['o', ' ', ' ', ' ', 'x', 'x', 'x'])); // 4
   console.log(targetTerdekat(['x', ' ', ' ', ' ', 'x', 'x', 'o', ' '])); // 1
   console.log(targetTerdekat([' ', ' ', 'o', ' '])); // 0

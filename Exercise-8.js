@@ -7,12 +7,17 @@ function pasanganTerbesar(num) {
     //buat array berisi setiap pasang angka
     for(var i=0; i<string.length-1; i++){
         var pasangan= string[i]+string[i+1] 
-        array.push(pasangan)       
+        array.push(Number(pasangan))       
     }
     
     //sortir angka terbesar
-    array.sort(function (a,b){return b-a})
-    return array[0]
+    var terbesar=0
+    for (i=0; i<array.length; i++){
+        if(array[i]>=terbesar){
+            terbesar=array[i]
+        }
+    }
+    return typeof terbesar
 
   }
   

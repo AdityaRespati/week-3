@@ -2,7 +2,7 @@
 
 function cariMean(arr) {
     var sum=0
-    for(i=0; i<arr.length; i++){
+    for(var i=0; i<arr.length; i++){
         sum+= arr[i]
     }
 
