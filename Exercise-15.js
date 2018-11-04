@@ -2,9 +2,25 @@
 
 function groupAnimals(animals) {
   //sortir input
-  animals.sort()
-  var output = []
-  var kelompok = []
+  var unsorted=true
+
+  while (unsorted) {
+    unsorted= false
+    var swap=0
+
+    for (var j=0; j<animals.length-1; j++){
+      if(animals[j+1]<animals[j]){
+          swap=animals[j]
+          animals[j]=animals[j+1]
+          animals[j+1]=swap
+
+          unsorted= true
+      }
+    }
+  }
+
+  var kelompok=[]
+  var output=[]
 
   for (var i = 0; i < animals.length; i++) {
 
@@ -14,7 +30,7 @@ function groupAnimals(animals) {
 
     }
 
-    //bila huruf depan beda push 'kelompok' ke array output dan buat 'kelompok' baru
+    //bila huruf depan beda push 'kelompok' ke array output dan reset 'kelompok'
     else {
       output[output.length] = kelompok
       kelompok = [animals[i]]
