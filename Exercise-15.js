@@ -9,7 +9,7 @@ function groupAnimals(animals) {
     var swap=0
 
     for (var j=0; j<animals.length-1; j++){
-      if(animals[j+1]<animals[j]){
+      if(animals[j+1][0]<animals[j][0]){
           swap=animals[j]
           animals[j]=animals[j+1]
           animals[j+1]=swap
@@ -18,6 +18,8 @@ function groupAnimals(animals) {
       }
     }
   }
+
+  console.log(animals, 'hasil sorting')
 
   var kelompok=[]
   var output=[]
